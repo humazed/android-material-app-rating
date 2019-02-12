@@ -30,7 +30,6 @@ ext {
 
 android {
     compileSdkVersion project.androidCompileSdkVersion
-    buildToolsVersion project.androidBuildToolsVersion
 
     defaultConfig {
         minSdkVersion project.androidMinSdkVersion
@@ -45,7 +44,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    buildToolsVersion project.androidBuildToolsVersion
 }
 
 dependencies {

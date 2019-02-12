@@ -4,7 +4,6 @@ apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion project.androidCompileSdkVersion
-    buildToolsVersion ("$androidBuildToolsVersion")
 
     defaultConfig {
         minSdkVersion project.androidMinSdkVersion
@@ -34,7 +33,6 @@ android {
             buildConfigField "String", "GROUP", "\"second\""
         }
     }
-    buildToolsVersion project.androidBuildToolsVersion
 }
 
 dependencies {
