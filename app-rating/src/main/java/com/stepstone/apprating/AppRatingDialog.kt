@@ -16,13 +16,13 @@ limitations under the License.
 
 package com.stepstone.apprating
 
-import android.support.annotation.ColorRes
-import android.support.annotation.StringRes
-import android.support.annotation.StyleRes
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentActivity
-import android.support.v4.app.FragmentManager
 import android.text.TextUtils
+import androidx.annotation.ColorRes
+import androidx.annotation.StringRes
+import androidx.annotation.StyleRes
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentActivity
+import androidx.fragment.app.FragmentManager
 import com.stepstone.apprating.AppRatingDialog.Builder
 import com.stepstone.apprating.common.Preconditions
 import java.io.Serializable
@@ -59,7 +59,7 @@ class AppRatingDialog private constructor(
     /**
      * This method shows rating dialog.
      */
-    fun show(fm: FragmentManager? = fragmentActivity.supportFragmentManager) {
+    fun show(fm: FragmentManager = fragmentActivity.supportFragmentManager) {
         AppRatingDialogFragment.newInstance(data).apply {
             fragment?.let {
                 setTargetFragment(it, requestCode)
